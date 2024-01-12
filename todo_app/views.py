@@ -11,7 +11,7 @@ class TodoListView(ListView):
     model = Task
     context_object_name = 'tasks'
     ordering = ["-is_done", "-created"]
-    template_name = 'mainapp/index.html'
+    template_name = 'todo_app/index.html'
 
 
 class TaskCrateView(CreateView):
